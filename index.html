@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRILLO</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+   <div class="container">
+    <header class="header">
+        <!-- <svg class="logo">
+            <use xlink:href="{{mix('svg/frontendIcons.svg')}}#sprite-triangles"> </use>
+        </svg> -->
+        <img src="triangles.svg" alt="svg" class="logo">
+        <form action="#" class="search">
+            <input type="text" placeholder="Search hotels..." class="search__input">
+            <button class="search__btn">
+                <!-- <svg class="search__icon">
+                    <use xlink:href="{{mix('svg/frontendIcons.svg')}}#sprite-search"> </use>
+                </svg> -->
+                <img src="search.svg" alt="svg" class="search__icon">
+            </button>
+        </form>
+        <nav class="user-nav">
+            <div class="user-nav__icon-box">
+                <!-- <svg class="user-nav__icon">
+                    <use xlink:href="{{mix('svg/frontendIcons.svg')}}#sprite-bookmark"> </use>
+                </svg> -->
+                <img src="bookmark.svg" alt="svg" class="user-nav__icon">
+                <span class="user-nav__notification">7</span>
+            </div>
+            <div class="user-nav__icon-box">
+                <!-- <svg class="user-nav__icon">
+                    <use xlink:href="{{mix('svg/frontendIcons.svg')}}#sprite-chat"> </use>
+                </svg> -->
+                <img src="chat.svg" alt="svg" class="user-nav__icon">
+                <span class="user-nav__notification">13</span>
+            </div>
+            <div class="user-nav__user">
+                <img src="user.jpg" alt="user" class="user-nav__user-img">
+                <span class="user-nav__user-name">Shreyas</span>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+              <li class="side-nav__item side-nav__item--active">
+                  <a href="#" class="side-nav__link">
+                    <!-- <svg class="side-nav__icon">
+                        <use xlink:href="{{mix('svg/frontendIcons.svg')}}#sprite-home"> </use>
+                    </svg> -->
+                    <img src="home.svg" alt="svg" class="side-nav__icon">
+                    <span>Home</span>
+                  </a>
+              </li>
+              <li class="side-nav__item">
+                  <a href="#" class="side-nav__link">
+                    <!-- <svg class="side-nav__icon">
+                        <use xlink:href="{{mix('svg/frontendIcons.svg')}}#sprite-flight"> </use>
+                    </svg> -->
+                    <img src="flight.svg" alt="svg" class="side-nav__icon">
+                    <span>Flight</span>
+                  </a>
+              </li>
+              <li class="side-nav__item">
+                  <a href="#" class="side-nav__link">
+                    <!-- <svg class="side-nav__icon">
+                        <use xlink:href="{{mix('svg/frontendIcons.svg')}}#sprite-key"> </use>
+                    </svg> -->
+                    <img src="key.svg" alt="svg" class="side-nav__icon">
+                    <span>Car Rental</span>
+                  </a>
+              </li>
+              <li class="side-nav__item">
+                  <a href="#" class="side-nav__link">
+                    <!-- <svg class="side-nav__icon">
+                        <use xlink:href="{{mix('svg/frontendIcons.svg')}}#sprite-map"> </use>
+                    </svg> -->
+                    <img src="map.svg" alt="svg" class="side-nav__icon">
+                    <span>Tours</span>
+                  </a>
+              </li>
+          </ul>
+          <div class="legal">
+              &copy; 2017 by trillo.All rights reserved.
+          </div>
+        </nav>
+        <main class="hotel-view">
+           <div class="overview">
+               <div class="images">
+                   <figure class="images__item">
+                       <img src="hotel3.jpg" alt="Hotel photo 1" class="images__img">
+                   </figure>
+                   <figure class="images__item">
+                       <img src="hotel3.jpg" alt="Hotel photo 2" class="images__img">
+                   </figure>
+                   <figure class="images__item">
+                       <img src="hotel3.jpg" alt="Hotel photo 3" class="images__img">
+                   </figure>
+               </div>
+               <div class="overview__bar">
+                    <div class="overview__heading">Hotel Las Palmas</div>
+                    <div class="overview__stars">
+                        <!-- <svg class="overview__star">
+                            <use xlink:href="{{mix('svg/frontendIcons.svg')}}#sprite-star"> </use>
+                        </svg> -->
+                    <img src="star.svg" alt="svg" class="overview__star">
+                    <img src="star.svg" alt="svg" class="overview__star">
+                    <img src="star.svg" alt="svg" class="overview__star">
+                    <img src="star.svg" alt="svg" class="overview__star">
+                    <img src="star.svg" alt="svg" class="overview__star">
+                        <!-- <svg class="overview__star">
+                            <use xlink:href="{{mix('svg/frontendIcons.svg')}}#sprite-star"> </use>
+                        </svg>
+                        <svg class="overview__star">
+                            <use xlink:href="{{mix('svg/frontendIcons.svg')}}#sprite-star"> </use>
+                        </svg>
+                        <svg class="overview__star">
+                            <use xlink:href="{{mix('svg/frontendIcons.svg')}}#sprite-star"> </use>
+                        </svg>
+                        <svg class="overview__star">
+                            <use xlink:href="{{mix('svg/frontendIcons.svg')}}#sprite-star"> </use>
+                        </svg> -->
+                    </div>
+                    <div class="overview__location">
+                        <!-- <svg class="overview__pin">
+                            <use xlink:href="{{mix('svg/frontendIcons.svg')}}#sprite-pin"> </use>
+                        </svg> -->
+                    <img src="pin.svg" alt="svg" class="overview__pin">
+                        <button class="btn-inline">Albufeira,Portugal</button>
+                    </div>
+                    <div class="overview__rating">
+                        <div class="overview__rate">8.6</div>
+                        <div class="overview__vote">499 Votes</div>
+                    </div>
+               </div>
+               <div class="detail">
+                   <div class="description">
+                        <p class="paragraph">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Doloribus voluptate ratione nemo corrupti nam odio, deleniti itaque 
+                            reiciendis incidunt doloremque!deleniti itaque reiciendis incidunt doloremque!
+                        </p>
+                        <p class="paragraph">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Doloribus voluptate ratione nemo corrupti nam odio, deleniti itaque 
+                        </p>
+                        <ul class="list">
+                            <li class="list-item">Lorem ipsum dolor</li>
+                            <li class="list-item">consectetur adipisicing</li>
+                            <li class="list-item">nemo corrupti nam</li>
+                            <li class="list-item">voluptate ration</li>
+                            <li class="list-item">reiciendis incidun</li>
+                            <li class="list-item">Doloribus voluptate</li>
+                            <li class="list-item">ratione nemo corrupti</li>
+                            <li class="list-item">sit amet consec</li>
+                        </ul>
+                        <div class="recommend">
+                            <div class="recommend__comment">Lucy and 3 other friends recommended this hotel</div>
+                            <div class="recommend__imgs">
+                                <img src="frd1.jfif" alt="Friend1" class="recommend__img">
+                                <img src="frd2.jfif" alt="Friend2" class="recommend__img">
+                                <img src="frd3.jfif" alt="Friend3" class="recommend__img">
+                                <img src="frd4.jfif" alt="Friend4" class="recommend__img">
+                            </div>
+                        </div>
+                   </div>
+                   <div class="hotel-reviews">
+                       <figure class="review">
+                           <blockquote class="review__text">
+                               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius dignissimos facilis inventore.
+                           </blockquote>
+                           <figcaption class="review__rating">
+                               <img src="user1.jpg" alt="User 1" class="review__img">
+                               <div class="review__details">
+                                   <div class="review__name">Sam Curren</div>
+                                   <div class="review__date">Feb 23rd,2017</div>
+                               </div>
+                               <div class="review__rate">7.8</div>
+                           </figcaption>
+                       </figure>
+                       <figure class="review">
+                           <blockquote class="review__text">
+                               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius dignissimos facilis inventore.
+                           </blockquote>
+                           <figcaption class="review__rating">
+                               <img src="user2.jpg" alt="User 1" class="review__img">
+                               <div class="review__details">
+                                   <div class="review__name">Sam Curren</div>
+                                   <div class="review__date">Feb 23rd,2017</div>
+                               </div>
+                               <div class="review__rate">9.3</div>
+                           </figcaption>
+                       </figure>
+                       <button class="btn-inline">Show More<span>&rarr;</span></button>
+                   </div>
+               </div>
+               <div class="cta">
+                   <div class="cta__text">Good News!We have 4 free rooms foer your selected dates!</div>
+                   <button class="btn">
+                        <span class="btn__visible">Book Now</span>
+                        <span class="btn__invisible">Only 4 rooms left</span>
+                   </button>
+               </div>
+               
+           </div>
+        </main>
+    </div>
+   </div>
+</body>
+</html>
